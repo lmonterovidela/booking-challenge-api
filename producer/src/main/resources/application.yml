@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: localhost
     password: guest
     username: guest
     exchange: message.exchange

@@ -6,6 +6,8 @@ services:
       - "8082:8082"
     depends_on:
       - rabbitmq
+    environment:
+      - spring.rabbitmq.host=rabbitmq
     networks:
       - rabbitmq_go_net
   producer:
@@ -14,6 +16,8 @@ services:
       - "8081:8081"
     depends_on:
       - rabbitmq
+    environment:
+      - spring.rabbitmq.host=rabbitmq
     networks:
       - rabbitmq_go_net
   rabbitmq:
