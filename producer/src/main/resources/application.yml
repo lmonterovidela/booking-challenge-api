@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  rabbitmq:
+    host: rabbitmq
+    password: guest
+    username: guest
+    exchange: message.exchange
+    keys:
+      booking:
+        add: booking.add.key
+        edit: booking.edit.key
+        delete: booking.delete.key

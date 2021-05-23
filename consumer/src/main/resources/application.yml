@@ -1,0 +1,30 @@
+server:
+  port: 8082
+spring:
+  rabbitmq:
+    host: rabbitmq
+    password: guest
+    username: guest
+    exchanges:
+      message : message.exchange
+      booking : booking.exchange
+    queues:
+      booking:
+        add: add.booking.queue
+        edit: edit.booking.queue
+        delete: delete.booking.queue
+        audit: audit.booking.queue
+    keys:
+      booking:
+        add: booking.add.key
+        edit: booking.edit.key
+        delete: booking.delete.key
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:~/test
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
