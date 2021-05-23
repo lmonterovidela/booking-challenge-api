@@ -3,7 +3,6 @@ package com.challenge.service;
 import com.challenge.dto.BookingDto;
 import com.challenge.model.Booking;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
-import org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistrar;
 import org.springframework.stereotype.Component;
 
 @Component

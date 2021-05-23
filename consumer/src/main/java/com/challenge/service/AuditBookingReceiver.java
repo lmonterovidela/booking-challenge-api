@@ -1,6 +1,5 @@
 package com.challenge.service;
 
-import com.challenge.dto.BookingDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
